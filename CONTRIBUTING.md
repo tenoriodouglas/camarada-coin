@@ -12,7 +12,7 @@ segurança, moderação.
 ## Preparando o ambiente
 
 ```bash
-git clone https://github.com/camarada-coin/camarada-coin.git
+git clone https://github.com/tenoriodouglas/camarada-coin.git
 cd camarada-coin
 npm install
 npm test

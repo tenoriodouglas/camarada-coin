@@ -29,7 +29,7 @@ contract CamaradaCoin is ERC20, ERC20Burnable, ERC20Permit {
     uint16 private constant _BPS_DENOMINATOR = 10_000;
 
     /// @notice Permanent pointer to the manifesto this deployment commits to.
-    string public constant MANIFESTO = "https://github.com/camarada-coin/camarada-coin/blob/main/MANIFESTO.md";
+    string public constant MANIFESTO = "https://github.com/tenoriodouglas/camarada-coin/blob/main/MANIFESTO.md";
 
     /// @notice Addresses that received the one-time allocation.
     address public immutable liquidityFund;
