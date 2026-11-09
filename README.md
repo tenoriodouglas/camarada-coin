@@ -97,9 +97,13 @@ Nunca coloque chave privada em arquivo versionado. O `.env` está no `.gitignore
 
 ## A landing page
 
-Em `docs/`, HTML/CSS/JS puro, sem build e sem dependência de runtime — pronto
-para GitHub Pages (Settings → Pages → Deploy from a branch → `main` / `/docs`),
-ou publicada pelo workflow em `.github/workflows/pages.yml`.
+Em `docs/`, HTML/CSS/JS puro, sem build e sem dependência de runtime.
+
+A publicação é feita pelo workflow `.github/workflows/pages.yml`. **Antes do
+primeiro deploy, habilite o Pages uma vez:** Settings → Pages → Source →
+**GitHub Actions**. O workflow não consegue fazer isso sozinho — criar o site
+exige permissão de administração do repositório, que o token do Actions não tem,
+e sem esse passo o job falha com `Create Pages site failed`.
 
 ## Contribuir
 
