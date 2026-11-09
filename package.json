@@ -1,0 +1,22 @@
+{
+  "name": "camarada-coin",
+  "version": "1.0.0",
+  "description": "Camarada Coin (CMRD) - fixed-supply ERC-20 token, manifesto and landing page",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "site": "npx --yes serve docs"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.17",
+    "solc": "^0.8.28"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0"
+  }
+}

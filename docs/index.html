@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Camarada Coin</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Camarada Coin ($CMRD): token ERC-20 de oferta fixa, sem dono, sem mint e sem taxa, com manifesto, tesouro coletivo e codigo aberto.">
+<meta property="og:title" content="Camarada Coin ($CMRD)">
+<meta property="og:description" content="Oferta fixa de 1.917.000.000 CMRD. Sem dono, sem mint, sem taxa. Todo o codigo e a distribuicao sao auditaveis.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#manifesto">Pular para o manifesto</a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <circle cx="24" cy="24" r="22" fill="currentColor"></circle>
+        <path d="M24 7l4.6 13.1 13.9.3-11.1 8.4 4 13.3L24 34.6 12.6 42.1l4-13.3L5.5 20.4l13.9-.3z" fill="var(--emblem-star)"></path>
+      </svg>
+      <span class="brand-name">Camarada Coin</span>
+      <span class="brand-ticker">$CMRD</span>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#utilidade">Para que serve</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#garantias">Garantias</a>
+      <a href="#plano">Plano</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false" title="Alternar tema">
+        <span aria-hidden="true" id="theme-icon">◐</span>
+        <span class="sr-only">Alternar tema claro e escuro</span>
+      </button>
+      <a class="btn btn-sm" href="https://github.com/camarada-coin/camarada-coin">Código</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Token ERC-20 · Rede Base · Pré-lançamento</p>
+        <h1>A moeda que<br>admite ser<br><em>coletiva</em></h1>
+        <p class="lede">
+          Toda criptomoeda é um acordo coletivo que finge ser propriedade privada.
+          A Camarada Coin inverte a hipocrisia: a oferta é fixa, o contrato não tem dono,
+          ninguém pode emitir mais um único token e o tesouro é administrado à vista de todos.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#manifesto">Ler o manifesto</a>
+          <a class="btn" href="#garantias">Verificar o contrato</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Oferta total</dt><dd class="num">1.917.000.000</dd></div>
+          <div><dt>Taxa de transferência</dt><dd class="num">0%</dd></div>
+          <div><dt>Função de emissão</dt><dd class="num">nenhuma</dd></div>
+          <div><dt>Dono do contrato</dt><dd class="num">ninguém</dd></div>
+        </dl>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" class="emblem" role="presentation">
+          <defs>
+            <clipPath id="disc"><circle cx="200" cy="200" r="168"></circle></clipPath>
+          </defs>
+          <g clip-path="url(#disc)">
+            <rect x="0" y="0" width="400" height="400" fill="var(--red-deep)"></rect>
+            <g class="rays">
+              <g fill="var(--red)">
+                <path d="M200 200 L520 60 L520 120 Z"></path>
+                <path d="M200 200 L520 180 L520 240 Z"></path>
+                <path d="M200 200 L520 300 L520 360 Z"></path>
+                <path d="M200 200 L-120 60 L-120 120 Z"></path>
+                <path d="M200 200 L-120 180 L-120 240 Z"></path>
+                <path d="M200 200 L-120 300 L-120 360 Z"></path>
+              </g>
+            </g>
+            <path d="M200 52l34 104 109.4 0-88.5 64.3 33.8 104.1L200 260.2l-88.7 64.2 33.8-104.1-88.5-64.3 109.4 0z" fill="var(--emblem-star)"></path>
+            <text x="200" y="222" text-anchor="middle" class="emblem-text">CMRD</text>
+          </g>
+          <circle cx="200" cy="200" r="168" fill="none" stroke="var(--ink)" stroke-width="6"></circle>
+          <circle cx="200" cy="200" r="182" fill="none" stroke="var(--ink)" stroke-width="2"></circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faixa de slogans -->
+  <div class="band" role="presentation">
+    <div class="band-track">
+      <span>Sem dono</span><span class="dot">★</span><span>Sem mint</span><span class="dot">★</span>
+      <span>Sem taxa oculta</span><span class="dot">★</span><span>Código aberto GPL</span><span class="dot">★</span>
+      <span>Tesouro à vista</span><span class="dot">★</span>
+      <span>Sem dono</span><span class="dot">★</span><span>Sem mint</span><span class="dot">★</span>
+      <span>Sem taxa oculta</span><span class="dot">★</span><span>Código aberto GPL</span><span class="dot">★</span>
+      <span>Tesouro à vista</span><span class="dot">★</span>
+    </div>
+  </div>
+
+  <!-- O que é -->
+  <section class="section" id="sobre">
+    <div class="wrap">
+      <h2 class="h2">O que é a Camarada Coin</h2>
+      <p class="section-lede">
+        Um token ERC-20 de oferta fixa na rede Base, criado como projeto cultural e de
+        organização coletiva: uma peça de agitprop que funciona de verdade em cadeia.
+        Não há empresa, não há promessa de lucro e não há ninguém com poder especial sobre o contrato.
+      </p>
+      <div class="cards three">
+        <article class="card">
+          <h3>Uma piada séria</h3>
+          <p>
+            A estética é de cartaz soviético, o humor é brasileiro e a engenharia é levada a sério.
+            O que é satírico é o discurso; o contrato, os testes e a distribuição são reais e verificáveis linha por linha.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Uma ferramenta coletiva</h3>
+          <p>
+            15% da oferta nasce num tesouro multisig que só se move por proposta pública.
+            É esse tesouro que paga infraestrutura, traduções, arte, campanhas e caixas de solidariedade.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Um exercício de confiança</h3>
+          <p>
+            Confiança aqui não é slogan: é ausência de privilégio no código.
+            Sem função de emissão, sem dono, sem taxa, sem pausa, sem lista negra, sem proxy de upgrade.
+            Nada disso pode ser adicionado depois.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto -->
+  <section class="section section-ink" id="manifesto">
+    <div class="wrap">
+      <p class="eyebrow light">Documento fundador</p>
+      <h2 class="h2 h2-light">Manifesto da Camarada Coin</h2>
+      <p class="section-lede light">
+        Sete teses. Estão no repositório em <span class="mono">MANIFESTO.md</span> e o endereço desse
+        arquivo está gravado como constante dentro do próprio contrato.
+      </p>
+      <ol class="theses">
+        <li>
+          <h3>O valor vem do trabalho, não do fundador</h3>
+          <p>
+            Nenhum token foi reservado para fundadores, investidores privados ou vendas antecipadas.
+            Quem construir, traduzir, documentar, moderar ou desenhar recebe do fundo de solidariedade,
+            por trabalho entregue e registrado em público.
+          </p>
+        </li>
+        <li>
+          <h3>Escassez declarada é melhor que escassez prometida</h3>
+          <p>
+            1.917.000.000 CMRD, cunhados uma única vez no construtor do contrato, em homenagem a 1917.
+            Não existe caminho técnico para emitir o token número 1.917.000.001.
+          </p>
+        </li>
+        <li>
+          <h3>Privilégio no código é privilégio de classe</h3>
+          <p>
+            Carteira de administrador, função de pausa, lista negra e taxa ajustável são as formas
+            modernas do direito senhorial. O contrato não tem nenhuma delas, e por isso não tem como passar a ter.
+          </p>
+        </li>
+        <li>
+          <h3>A liquidez é um bem comum</h3>
+          <p>
+            80% da oferta vai para a piscina de liquidez pública, e os tokens de LP são queimados.
+            Ninguém, inclusive quem escreveu este site, pode retirar aquele fundo do mercado.
+          </p>
+        </li>
+        <li>
+          <h3>Transparência é a única auditoria que não se compra</h3>
+          <p>
+            Código sob GPL-3.0, testes automatizados no repositório, contrato verificado no explorador
+            e todos os endereços dos fundos publicados. Não exibimos selo de auditoria que não temos.
+          </p>
+        </li>
+        <li>
+          <h3>Organização acima de especulação</h3>
+          <p>
+            A Camarada Coin não promete rendimento, valorização nem renda passiva.
+            Promete uma estrutura honesta para financiar coisas que um grupo decide coletivamente financiar.
+          </p>
+        </li>
+        <li>
+          <h3>Nenhuma vanguarda secreta</h3>
+          <p>
+            Decisões sobre o tesouro passam por proposta escrita, debate aberto e votação registrada.
+            Quem administra as chaves executa a decisão; não a substitui.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Utilidade -->
+  <section class="section" id="utilidade">
+    <div class="wrap">
+      <h2 class="h2">Para que a moeda serve</h2>
+      <p class="section-lede">
+        Utilidade declarada com honestidade: o que já existe no código, o que depende de software
+        que ainda vamos escrever e o que depende de gente aparecendo para fazer.
+      </p>
+      <div class="use-grid">
+        <article class="use">
+          <span class="tag tag-live">Pronto no contrato</span>
+          <h3>Transferir valor sem pedágio</h3>
+          <p>Transferência e <span class="mono">permit</span> (EIP-2612) com taxa zero de protocolo. Só se paga o gás da rede Base.</p>
+        </article>
+        <article class="use">
+          <span class="tag tag-live">Pronto no contrato</span>
+          <h3>Queimar a própria parte</h3>
+          <p>Qualquer carteira pode queimar os seus tokens e reduzir a oferta. Ninguém pode queimar os de outra pessoa.</p>
+        </article>
+        <article class="use">
+          <span class="tag tag-soon">Depende do tesouro</span>
+          <h3>Financiar causas e trabalho</h3>
+          <p>Caixas de solidariedade, bolsas para contribuintes, tradução, arte e infraestrutura, pagas pelo tesouro coletivo após votação.</p>
+        </article>
+        <article class="use">
+          <span class="tag tag-soon">Depende do tesouro</span>
+          <h3>Votar propostas (CIP)</h3>
+          <p>Cada proposta é um arquivo no repositório e uma votação por saldo de token em ferramenta aberta, com resultado arquivado.</p>
+        </article>
+        <article class="use">
+          <span class="tag tag-culture">Cultura</span>
+          <h3>Circular como símbolo</h3>
+          <p>Cartazes, adesivos, camisetas e memes. A identidade visual é livre: GPL para o código, CC BY-SA para a arte.</p>
+        </article>
+        <article class="use">
+          <span class="tag tag-culture">Cultura</span>
+          <h3>Ensinar como funciona</h3>
+          <p>O repositório é material didático: um ERC-20 mínimo, comentado e testado, para quem quer entender o que é um token de verdade.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics -->
+  <section class="section section-paper2" id="tokenomics">
+    <div class="wrap">
+      <h2 class="h2">Tokenomics</h2>
+      <p class="section-lede">
+        A divisão abaixo não é um plano em PDF: são constantes do contrato
+        (<span class="mono">LIQUIDITY_BPS</span>, <span class="mono">TREASURY_BPS</span>,
+        <span class="mono">SOLIDARITY_BPS</span>) aplicadas na cunhagem única, dentro do construtor.
+      </p>
+
+      <div class="alloc">
+        <div class="alloc-row">
+          <div class="alloc-head"><span class="alloc-pct num">80%</span><h3>Liquidez pública</h3></div>
+          <div class="alloc-bar"><span style="width:80%"></span></div>
+          <p>1.533.600.000 CMRD na piscina de negociação. Os tokens de LP são queimados, então a liquidez não pode ser retirada por ninguém.</p>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-head"><span class="alloc-pct num">15%</span><h3>Tesouro coletivo</h3></div>
+          <div class="alloc-bar"><span style="width:15%"></span></div>
+          <p>287.550.000 CMRD numa carteira multisig 3 de 5. Cada saída exige uma proposta pública aprovada e fica registrada em cadeia.</p>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-head"><span class="alloc-pct num">5%</span><h3>Fundo de solidariedade</h3></div>
+          <div class="alloc-bar"><span style="width:5%"></span></div>
+          <p>95.850.000 CMRD para quem contribui com trabalho e para caixas de apoio. Liberado em lotes, com relatório de cada lote.</p>
+        </div>
+        <div class="alloc-row alloc-zero">
+          <div class="alloc-head"><span class="alloc-pct num">0%</span><h3>Fundadores, investidores e pré-venda</h3></div>
+          <div class="alloc-bar"><span style="width:0.6%"></span></div>
+          <p>Zero. Não há rodada privada, alocação de equipe, cronograma de desbloqueio nem bônus para quem chegou primeiro.</p>
+        </div>
+      </div>
+
+      <div class="table-scroll">
+        <table class="data">
+          <caption>Parâmetros do token</caption>
+          <tbody>
+            <tr><th scope="row">Nome</th><td>Camarada Coin</td></tr>
+            <tr><th scope="row">Símbolo</th><td class="mono">CMRD</td></tr>
+            <tr><th scope="row">Padrão</th><td>ERC-20 + ERC-20Burnable + ERC-20Permit</td></tr>
+            <tr><th scope="row">Rede</th><td>Base (chain id 8453) · testes em Base Sepolia (84532)</td></tr>
+            <tr><th scope="row">Casas decimais</th><td class="num">18</td></tr>
+            <tr><th scope="row">Oferta total</th><td class="num">1.917.000.000 CMRD</td></tr>
+            <tr><th scope="row">Oferta máxima</th><td class="num">1.917.000.000 CMRD (só pode diminuir, por queima)</td></tr>
+            <tr><th scope="row">Imposto de compra e venda</th><td class="num">0% / 0%</td></tr>
+            <tr><th scope="row">Base de código</th><td>OpenZeppelin Contracts 5 · Solidity 0.8.28 · licença GPL-3.0-or-later</td></tr>
+            <tr><th scope="row">Endereço do contrato</th><td class="mono pending">a publicar no dia do deploy</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fineprint">
+        Enquanto o contrato não estiver implantado e verificado, nenhum endereço divulgado por
+        terceiros como sendo o $CMRD é legítimo. O endereço oficial sairá neste site e no repositório, ao mesmo tempo.
+      </p>
+    </div>
+  </section>
+
+  <!-- Garantias -->
+  <section class="section" id="garantias">
+    <div class="wrap">
+      <h2 class="h2">Garantias que você pode checar sozinho</h2>
+      <p class="section-lede">
+        Confiança não se pede, se confere. Cada item abaixo vem com o jeito de verificar sem
+        depender da nossa palavra.
+      </p>
+      <ul class="checks">
+        <li>
+          <h3>Não existe função de emissão</h3>
+          <p>A oferta é cunhada uma vez no construtor. Depois disso, não há <span class="mono">mint</span> em nenhuma forma.</p>
+          <p class="how">Como conferir: no código verificado, procure por <span class="mono">_mint</span> — só aparece dentro do <span class="mono">constructor</span>.</p>
+        </li>
+        <li>
+          <h3>O contrato não tem dono</h3>
+          <p>Nada de <span class="mono">Ownable</span>, <span class="mono">AccessControl</span>, pausa, lista negra ou taxa ajustável.</p>
+          <p class="how">Como conferir: a aba de leitura do explorador não mostra <span class="mono">owner()</span>; o teste <span class="mono">"no privileged surface"</span> falha se alguém adicionar.</p>
+        </li>
+        <li>
+          <h3>Não há proxy de upgrade</h3>
+          <p>O que é implantado é o que fica. Ninguém troca a lógica depois.</p>
+          <p class="how">Como conferir: o explorador classifica o endereço como contrato comum, sem implementação apontada.</p>
+        </li>
+        <li>
+          <h3>A liquidez é travada por queima</h3>
+          <p>Os tokens de LP da piscina inicial são enviados ao endereço de queima.</p>
+          <p class="how">Como conferir: siga a transação de queima do LP publicada em <span class="mono">TRANSPARENCIA.md</span>.</p>
+        </li>
+        <li>
+          <h3>O código é aberto e testado</h3>
+          <p>Repositório público sob GPL-3.0, com testes automatizados em cada envio de código.</p>
+          <p class="how">Como conferir: rode <span class="mono">npm install &amp;&amp; npm test</span> na sua máquina e veja a suíte passar.</p>
+        </li>
+        <li>
+          <h3>O que ainda não existe está marcado como tal</h3>
+          <p>Sem auditoria comprada, sem parceria inventada, sem listagem anunciada antes de acontecer.</p>
+          <p class="how">Como conferir: tudo o que estiver pendente aparece com a marca <span class="pending-inline">a publicar</span> até existir de fato.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Plano -->
+  <section class="section section-ink" id="plano">
+    <div class="wrap">
+      <p class="eyebrow light">Roteiro</p>
+      <h2 class="h2 h2-light">Plano Quinquenal</h2>
+      <p class="section-lede light">Cinco fases, sem datas inventadas. Uma fase só é anunciada como concluída quando dá para verificar em cadeia ou no repositório.</p>
+      <ol class="plan">
+        <li>
+          <span class="plan-n num">1</span>
+          <div>
+            <h3>Fundação</h3>
+            <p>Contrato, testes, manifesto e este site. Implantação em Base Sepolia para ensaio público.</p>
+            <span class="plan-state is-done">Concluído</span>
+          </div>
+        </li>
+        <li>
+          <span class="plan-n num">2</span>
+          <div>
+            <h3>Socialização dos meios</h3>
+            <p>Deploy na Base, verificação do código no explorador, criação da piscina de liquidez e queima dos tokens de LP.</p>
+            <span class="plan-state is-next">Próxima</span>
+          </div>
+        </li>
+        <li>
+          <span class="plan-n num">3</span>
+          <div>
+            <h3>Conselho de camaradas</h3>
+            <p>Multisig 3 de 5 instalado, processo de propostas (CIP) escrito e primeira votação registrada.</p>
+            <span class="plan-state">Planejada</span>
+          </div>
+        </li>
+        <li>
+          <span class="plan-n num">4</span>
+          <div>
+            <h3>Caixa de solidariedade</h3>
+            <p>Primeiros repasses do fundo de solidariedade, com relatório público de cada lote e de cada destinatário.</p>
+            <span class="plan-state">Planejada</span>
+          </div>
+        </li>
+        <li>
+          <span class="plan-n num">5</span>
+          <div>
+            <h3>Autogestão</h3>
+            <p>Manutenção do repositório distribuída entre mais mantenedores, para o projeto não depender de quem o começou.</p>
+            <span class="plan-state">Planejada</span>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Governança e transparência -->
+  <section class="section" id="governanca">
+    <div class="wrap">
+      <h2 class="h2">Governança e transparência</h2>
+      <div class="split">
+        <div>
+          <h3 class="h3">Como uma decisão acontece</h3>
+          <ol class="steps">
+            <li>Qualquer pessoa abre uma CIP (Camarada Improvement Proposal) como arquivo no repositório.</li>
+            <li>Debate aberto por no mínimo 7 dias, em público.</li>
+            <li>Votação por saldo de token, com registro do resultado.</li>
+            <li>O multisig executa o que foi aprovado e publica o hash da transação.</li>
+          </ol>
+          <p class="fineprint">Votação por saldo não é perfeita: quem tem mais token pesa mais. O processo de CIP existe para que o debate e o resultado fiquem registrados, e para que uma decisão possa ser contestada antes de ser executada.</p>
+        </div>
+        <div>
+          <h3 class="h3">Endereços públicos</h3>
+          <div class="table-scroll">
+            <table class="data">
+              <tbody>
+                <tr><th scope="row">Contrato CMRD</th><td class="mono pending">a publicar no deploy</td></tr>
+                <tr><th scope="row">Fundo de liquidez</th><td class="mono pending">a publicar no deploy</td></tr>
+                <tr><th scope="row">Tesouro (multisig 3/5)</th><td class="mono pending">a publicar no deploy</td></tr>
+                <tr><th scope="row">Fundo de solidariedade</th><td class="mono pending">a publicar no deploy</td></tr>
+                <tr><th scope="row">Queima do LP</th><td class="mono pending">a publicar após a criação da piscina</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="fineprint">Esta tabela é espelhada em <span class="mono">TRANSPARENCIA.md</span>, cujo histórico de alterações fica registrado no git.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-paper2" id="faq">
+    <div class="wrap">
+      <h2 class="h2">Perguntas diretas</h2>
+      <div class="faq">
+        <details>
+          <summary>Isto é ligado ao Lula, ao PT ou a algum governo?</summary>
+          <p>Não. A Camarada Coin não tem vínculo, autorização, patrocínio nem relação com qualquer político, partido, sindicato, candidatura ou órgão público. A referência é cultural e satírica, à iconografia da esquerda. Nenhum nome de pessoa real é usado como marca do projeto.</p>
+        </details>
+        <details>
+          <summary>Vou ganhar dinheiro com isso?</summary>
+          <p>Provavelmente não, e quem garantir que sim está mentindo. O token não gera rendimento, não tem lastro, não paga dividendo e pode valer zero. Participe pela ideia, pela construção ou pela piada — não como investimento.</p>
+        </details>
+        <details>
+          <summary>Uma moeda comunista com oferta fixa não é contraditório?</summary>
+          <p>É, e a contradição é proposital. Um token não aboliu nem vai abolir nada; ele só torna as regras visíveis. O que a moeda recusa é o privilégio escondido no código: dono, emissão arbitrária e pedágio.</p>
+        </details>
+        <details>
+          <summary>Quem pode mudar o contrato depois do deploy?</summary>
+          <p>Ninguém. Não há dono, função administrativa nem proxy de upgrade. Qualquer mudança exigiria implantar um contrato novo e convencer as pessoas a migrar — publicamente, à vista de todos.</p>
+        </details>
+        <details>
+          <summary>Como sei que a equipe não vai vender tudo?</summary>
+          <p>Porque não existe alocação de equipe. 80% está na liquidez com o LP queimado, 15% no multisig que só se move por proposta pública e 5% no fundo de solidariedade, liberado em lotes com relatório. O deployer termina a transação de criação com saldo zero, e isso é verificável.</p>
+        </details>
+        <details>
+          <summary>Tem auditoria?</summary>
+          <p>Não temos auditoria paga de terceiros, e não vamos inventar uma. O que existe: contrato pequeno baseado no OpenZeppelin, código aberto, 17 testes automatizados e verificação do código-fonte no explorador. Se alguém da comunidade auditar, o relatório entra no repositório, com o nome de quem assinou.</p>
+        </details>
+        <details>
+          <summary>Como eu contribuo?</summary>
+          <p>Abrindo issue ou pull request no repositório, traduzindo o manifesto, fazendo arte, escrevendo documentação ou propondo uma CIP. Trabalho entregue pode ser remunerado pelo fundo de solidariedade, por decisão registrada.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aviso -->
+  <section class="section section-warn" id="aviso">
+    <div class="wrap">
+      <h2 class="h2">Aviso de risco e isenção</h2>
+      <div class="warn-grid">
+        <p><strong>Não é oferta nem recomendação.</strong> Nada neste site é oferta pública, consultoria financeira, promessa de rendimento ou garantia de valor. Não há emissor obrigado a recomprar o token.</p>
+        <p><strong>Risco de perda total.</strong> Criptoativos são voláteis e podem valer zero. Use apenas o que você pode perder por inteiro, e nunca dinheiro de necessidades básicas ou dívida.</p>
+        <p><strong>Projeto cultural e satírico.</strong> O uso de simbologia política é referência cultural e crítica. O projeto não representa partido, governo, sindicato ou candidatura, nem fala em nome de pessoa alguma.</p>
+        <p><strong>Sem custódia.</strong> O projeto nunca pede sua frase-semente nem chave privada, não faz airdrop por mensagem direta e não tem suporte por DM. Quem pedir isso em nome da Camarada Coin é golpe.</p>
+        <p><strong>Software como está.</strong> O código é distribuído sob GPL-3.0-or-later, sem garantia de qualquer tipo, nos termos da licença.</p>
+        <p><strong>Suas obrigações.</strong> Tributos e regras locais sobre criptoativos são responsabilidade de cada participante.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div>
+      <p class="footer-brand">Camarada Coin · $CMRD</p>
+      <p class="fineprint">Código sob GPL-3.0-or-later. Textos e arte sob CC BY-SA 4.0. Sem dono, com responsáveis.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Documentos">
+      <a href="https://github.com/camarada-coin/camarada-coin">Repositório</a>
+      <a href="https://github.com/camarada-coin/camarada-coin/blob/main/MANIFESTO.md">Manifesto</a>
+      <a href="https://github.com/camarada-coin/camarada-coin/blob/main/TOKENOMICS.md">Tokenomics</a>
+      <a href="https://github.com/camarada-coin/camarada-coin/blob/main/TRANSPARENCIA.md">Transparência</a>
+      <a href="https://github.com/camarada-coin/camarada-coin/blob/main/SECURITY.md">Segurança</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
